@@ -12,17 +12,17 @@ complete firmware-to-userspace stack from open-source components.
 │  ┌──────────┬──────┬───────────┬────────────────────┐   │
 │  │ bootinfo │ FSBL │  OpenSBI  │    EDK2 UEFI       │   │
 │  │          │(SPL) │(fw_dyn.)  │   (edk2.itb)       │   │
-│  │  128K    │ 256K │   192K    │   remaining         │   │
+│  │  128K    │ 256K │   192K    │   remaining        │   │
 │  └──────────┴──────┴───────────┴────────────────────┘   │
 └─────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────┐
-│                  eMMC / SD Card (GPT)                   │
+│                 NVMe SSD (GPT)                          │
 │  ┌──────────────────┬──────────────────────────────┐    │
-│  │    efi.img        │        rootfs.ext4           │    │
-│  │  (FAT32: GRUB,   │  (Debian Trixie riscv64)     │    │
-│  │   kernel, ESOS)  │                              │    │
-│  │     256M          │       remaining              │    │
+│  │    efi.img       │        rootfs.ext4           │    │
+│  │  (FAT32: GRUB   │  (Debian Trixie riscv64)     │    │
+│  │   )              │                              │    │
+│  │     256M         │       remaining              │    │
 │  └──────────────────┴──────────────────────────────┘    │
 └─────────────────────────────────────────────────────────┘
 ```
