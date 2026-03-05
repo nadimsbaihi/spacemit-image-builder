@@ -281,16 +281,17 @@ kernel: check-submodules $(STAMPS)
 		echo "[KERNEL] Already built. Use 'make clean-kernel' to rebuild."; \
 	else \
 		echo "[KERNEL] Building kernel .deb packages (Docker)..."; \
-		docker build --no-cache -t $(DOCKER_KERNEL) $(KERNEL_BUILDER_DIR); \
 		mkdir -p $(BUILD_OS)/debs; \
-		docker run --rm \
-			-v $(BUILD_OS)/debs:/output \
-			$(DOCKER_KERNEL); \
+		docker build --no-cache --output $(BUILD_OS)/debs $(KERNEL_BUILDER_DIR); \
 		echo "[KERNEL] Output: $(BUILD_OS)/debs/"; \
 		ls -1 $(BUILD_OS)/debs/*.deb 2>/dev/null || echo "WARNING: No .deb files found"; \
 		touch $(STAMPS)/kernel.done; \
 	fi
 
+clean-kernel:
+	@echo "[KERNEL] Cleaning..."
+	@rm -rf $(BUILD_OS)/debs $(STAMPS)/kernel.done
+	-docker rmi $(DOCKER_KERNEL) 2>/dev/null
 clean-kernel:
 	@echo "[KERNEL] Cleaning..."
 	@rm -rf $(BUILD_OS)/debs $(STAMPS)/kernel.done
@@ -307,14 +308,11 @@ grub: check-submodules $(STAMPS)
 	@if [ -f $(STAMPS)/grub.done ]; then \
 		echo "[GRUB] Already built. Use 'make clean-grub' to rebuild."; \
 	else \
-		echo "[GRUB] Building GRUB EFI binary (Docker)..."; \
-		docker build -t $(DOCKER_GRUB) $(GRUB_BUILDER_DIR); \
+		echo "[GRUB] Building GRUB .deb package (Docker)..."; \
 		mkdir -p $(BUILD_OS)/grub; \
-		docker run --rm \
-			-v $(BUILD_OS)/grub:/output \
-			$(DOCKER_GRUB); \
+		docker build --output $(BUILD_OS)/grub $(GRUB_BUILDER_DIR); \
 		echo "[GRUB] Output: $(BUILD_OS)/grub/"; \
-		ls -1 $(BUILD_OS)/grub/*.efi 2>/dev/null || echo "WARNING: No .efi files found"; \
+		ls -1 $(BUILD_OS)/grub/*.deb 2>/dev/null || echo "WARNING: No .deb files found"; \
 		touch $(STAMPS)/grub.done; \
 	fi
 
@@ -339,14 +337,15 @@ debian: kernel grub esos $(STAMPS)
 	else \
 		echo "[DEBIAN] Staging artifacts for Debian builder..."; \
 		mkdir -p $(DEBIAN_INPUT)/{debs,grub,esos}; \
-		cp $(BUILD_OS)/debs/*.deb          $(DEBIAN_INPUT)/debs/; \
-		cp $(BUILD_OS)/grub/*.efi          $(DEBIAN_INPUT)/grub/; \
-		cp $(BUILD_OS)/rtthread-n308.elf    $(DEBIAN_INPUT)/esos/; \
+		cp $(BUILD_OS)/debs/*.deb          $(DEBIAN_INPUT)/; \
+		cp $(BUILD_OS)/grub/*.deb          $(DEBIAN_INPUT)/; \
+		cp $(BUILD_OS)/rtthread-n308.elf    $(DEBIAN_INPUT)/; \
 		echo "[DEBIAN] Building Debian image (Docker)..."; \
 		docker build -t $(DOCKER_DEBIAN) $(DEBIAN_BUILDER_DIR); \
 		mkdir -p $(BUILD_OS)/debian; \
 		docker run --rm --privileged \
 			-v $(BUILD_OS)/debian:/output \
+			-v $(DEBIAN_INPUT):/input \
 			$(DOCKER_DEBIAN); \
 		echo "[DEBIAN] Output: $(BUILD_OS)/debian/"; \
 		ls -1 $(BUILD_OS)/debian/*.{img,ext4} 2>/dev/null || echo "WARNING: No image files found"; \
