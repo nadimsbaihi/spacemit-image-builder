@@ -1,14 +1,14 @@
 [submodule "components/uboot"]
 	path = components/uboot
-	url = https://gitee.com/spacemit-buildroot/uboot-2022.10.git
+	url = https://github.com/nadimsbaihi/uboot-2022.10.git
 
 [submodule "components/opensbi"]
 	path = components/opensbi
-	url = https://gitee.com/spacemit-buildroot/opensbi.git
+	url = https://github.com/nadimsbaihi/opensbi.git
 
 [submodule "components/edk2"]
 	path = components/edk2
-	url = https://gitee.com/spacemit-buildroot/edk2.git
+	url = https://github.com/nadimsbaihi/edk2.git
 
 [submodule "components/edk2-platforms"]
 	path = components/edk2-platforms
@@ -18,7 +18,6 @@
 	path = components/kernel-builder
 	url = https://github.com/nadimsbaihi/debian-kernel-spacemit-builder.git
 
-# TODO: Create this repo and update URL
 [submodule "components/grub-builder"]
 	path = components/grub-builder
 	url = https://github.com/nadimsbaihi/grub-builder.git

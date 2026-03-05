@@ -62,13 +62,13 @@ add_submodule() {
 }
 
 add_submodule "components/uboot" \
-    "https://gitee.com/spacemit-buildroot/uboot-2022.10.git"
+    "https://github.com/nadimsbaihi/uboot-2022.10.git"
 
 add_submodule "components/opensbi" \
-    "https://gitee.com/spacemit-buildroot/opensbi.git"
+    "https://github.com/nadimsbaihi/opensbi.git"
 
 add_submodule "components/edk2" \
-    "https://gitee.com/spacemit-buildroot/edk2.git"
+    "https://github.com/nadimsbaihi/edk2.git"
 
 add_submodule "components/edk2-platforms" \
     "https://github.com/nadimsbaihi/edk2-platforms.git"
@@ -76,10 +76,8 @@ add_submodule "components/edk2-platforms" \
 add_submodule "components/kernel-builder" \
     "https://github.com/nadimsbaihi/debian-kernel-spacemit-builder.git"
 
-# NOTE: Update this URL once the grub-builder repo is created
-# add_submodule "components/grub-builder" \
-#     "https://github.com/nadimsbaihi/grub-builder.git"
-echo "  [SKIP] components/grub-builder — repo not yet created (uncomment in script when ready)"
+add_submodule "components/grub-builder" \
+    "https://github.com/nadimsbaihi/grub-builder.git"
 
 add_submodule "components/debian-builder" \
     "https://github.com/nadimsbaihi/debian-kernel-spacemit-builder.git"
