@@ -85,9 +85,6 @@ fastboot flash bootinfo factory/bootinfo_spinor.bin
 echo "[FLASH] Flashing FSBL (U-Boot SPL)..."
 fastboot flash fsbl factory/FSBL.bin
 
-echo "[FLASH] Flashing env..."
-fastboot flash env env.bin
-
 echo "[FLASH] Flashing OpenSBI..."
 fastboot flash opensbi fw_dynamic.itb
 

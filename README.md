@@ -20,8 +20,8 @@ complete firmware-to-userspace stack from open-source components.
 │                 NVMe SSD (GPT)                          │
 │  ┌──────────────────┬──────────────────────────────┐    │
 │  │    efi.img       │        rootfs.ext4           │    │
-│  │  (FAT32: GRUB   │  (Debian Trixie riscv64)      │    │
-│  │   )              │                              │    │
+│  │  (FAT32: GRUB)   │  (Debian Trixie riscv64)     │    │
+│  │                  │                              │    │
 │  │     256M         │       remaining              │    │
 │  └──────────────────┴──────────────────────────────┘    │
 └─────────────────────────────────────────────────────────┘
@@ -90,7 +90,6 @@ output/
 │   └── FSBL.bin               (U-Boot SPL)
 ├── fw_dynamic.itb             (OpenSBI)
 ├── edk2.itb                   (EDK2 UEFI FIT image)
-├── env.bin                    (U-Boot environment, zeroed)
 ├── partition_2M.json          (SPI NOR MTD partition table)
 ├── partition_universal.json   (eMMC/SD GPT partition table)
 ├── efi.img                    (FAT32 EFI partition)
