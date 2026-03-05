@@ -1,0 +1,18 @@
+{
+    "version": "1.0",
+    "format": "gpt",
+    "partitions": [
+        {
+            "name": "EFI",
+            "offset": "0K",
+            "size": "256M",
+            "image": "efi.img"
+        },
+        {
+            "name": "rootfs",
+            "size": "-",
+            "image": "rootfs.ext4",
+            "compress": "gzip-5"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+# Build artifacts
+build/
+output/
+
+# Debian builder staged inputs
+components/debian-builder/input/
+
+# Editor / IDE
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
