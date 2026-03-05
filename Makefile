@@ -281,7 +281,7 @@ kernel: check-submodules $(STAMPS)
 		echo "[KERNEL] Already built. Use 'make clean-kernel' to rebuild."; \
 	else \
 		echo "[KERNEL] Building kernel .deb packages (Docker)..."; \
-		docker build -t $(DOCKER_KERNEL) $(KERNEL_BUILDER_DIR); \
+		docker build --no-cache -t $(DOCKER_KERNEL) $(KERNEL_BUILDER_DIR); \
 		mkdir -p $(BUILD_OS)/debs; \
 		docker run --rm \
 			-v $(BUILD_OS)/debs:/output \
