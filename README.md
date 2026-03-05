@@ -142,7 +142,7 @@ spacemit-image-builder/
 │   └── esos/                     #   Energy Service OS (RT-Thread)
 ├── factory/                      # Static flash config files
 │   ├── partition_2M.json         #   SPI NOR MTD partition table
-│   └── partition_universal.json  #   eMMC/SD GPT partition table
+│   └── partition_universal.json  #   NVMe SSD GPT partition table
 ├── scripts/
 │   ├── build-edk2.sh             #   EDK2 build wrapper
 │   ├── assemble.sh               #   Artifact collection
