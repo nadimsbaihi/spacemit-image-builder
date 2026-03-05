@@ -93,17 +93,6 @@ else
     fail "Milk-V-Jupiter.itb not found — run 'make edk2'"
 fi
 
-# ---- Boot-stage: env.bin (U-Boot environment) ----
-# The env partition is 64K. Generate a zeroed env.bin if one doesn't exist.
-if [ -f "$BUILD_BOOT/env.bin" ]; then
-    cp "$BUILD_BOOT/env.bin" "$OUTPUT/env.bin"
-    pass "env.bin (U-Boot environment) — $(du -h "$BUILD_BOOT/env.bin" | cut -f1)"
-else
-    warn "env.bin not found — generating empty 64K environment"
-    dd if=/dev/zero of="$OUTPUT/env.bin" bs=1K count=64 status=none
-    pass "env.bin (zeroed 64K)"
-fi
-
 # ---- OS: efi.img (FAT32 EFI partition from Debian builder) ----
 echo ""
 echo "OS artifacts (eMMC/SD):"
