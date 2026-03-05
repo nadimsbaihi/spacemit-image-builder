@@ -1,1 +1,0 @@
-/home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/I2c/I2cDxe/I2cDxe/GNUmakefile

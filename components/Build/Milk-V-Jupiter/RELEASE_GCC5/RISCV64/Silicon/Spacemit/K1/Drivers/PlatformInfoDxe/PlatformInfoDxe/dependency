@@ -1,9 +1,0 @@
-
-
--include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/PlatformInfoDxe/PlatformInfoDxe/OUTPUT/PlatformInfoDxe.obj.deps
-
--include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/PlatformInfoDxe/PlatformInfoDxe/OUTPUT/AutoGen.obj.deps
-
--include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/PlatformInfoDxe/PlatformInfoDxe/OUTPUT/DdrFrequency.obj.deps
-
-               

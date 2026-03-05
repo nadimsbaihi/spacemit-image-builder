@@ -1,9 +1,0 @@
-EFI_FV_TOTAL_SIZE = 0x1ff000
-EFI_FV_TAKEN_SIZE = 0xb7e40
-EFI_FV_SPACE_SIZE = 0x1471c0
-
-SecMainRiscV64 (Fixed Flash Address, BaseAddress=0x00002000c0, EntryPoint=0x0000200300, Type=PE)
-(GUID=834CC9B8-452E-4D6D-BD25-1D219318BB28 .textbaseaddress=0x0000200300 .databaseaddress=0x000020ca80)
-
-
-

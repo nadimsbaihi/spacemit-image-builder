@@ -1,1 +1,0 @@
-/home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/RISC-V/ProcessorPkg/Library/RiscVCpuLib/RiscVCpuLib/GNUmakefile

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/FV/Ffs/905f13b0-8f91-4b0a-bd76-e1e78f9422e4UdfDxe/905f13b0-8f91-4b0a-bd76-e1e78f9422e4SEC2.1.pe32 /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/Disk/UdfDxe/UdfDxe/OUTPUT/UdfDxe.efi

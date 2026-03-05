@@ -1,4 +1,0 @@
-gCommandLineDefines: {'ARCH': 'RISCV64'}
-BuildOptionPcd: []
-Active Platform: /home/kapoagaeming/spacemit-image-builder/components/edk2-platforms/Platform/Spacemit/K1/Milk-V-Jupiter/Milk-V-Jupiter.dsc
-Flash Image Definition: /home/kapoagaeming/spacemit-image-builder/components/edk2-platforms/Platform/Spacemit/K1/Milk-V-Jupiter/Milk-V-Jupiter.fdf

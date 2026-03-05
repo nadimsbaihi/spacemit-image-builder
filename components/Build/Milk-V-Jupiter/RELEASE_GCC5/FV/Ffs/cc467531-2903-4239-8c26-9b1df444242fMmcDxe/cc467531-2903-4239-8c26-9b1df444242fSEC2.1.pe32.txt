@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/FV/Ffs/cc467531-2903-4239-8c26-9b1df444242fMmcDxe/cc467531-2903-4239-8c26-9b1df444242fSEC2.1.pe32 /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/Drivers/MmcDxe/MmcDxe/OUTPUT/MmcDxe.efi

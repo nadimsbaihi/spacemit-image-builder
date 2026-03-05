@@ -1,9 +1,0 @@
-
-
--include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe/OUTPUT/SecurityStub.obj.deps
-
--include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe/OUTPUT/AutoGen.obj.deps
-
--include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe/OUTPUT/Defer3rdPartyImageLoad.obj.deps
-
-               

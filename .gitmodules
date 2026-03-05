@@ -24,7 +24,7 @@
 
 [submodule "components/debian-builder"]
 	path = components/debian-builder
-	url = https://github.com/nadimsbaihi/debian-spacemit-builder.git
+	url = https://github.com/nadimsbaihi/debian-kernel-spacemit-builder.git
 
 [submodule "components/esos"]
 	path = components/esos
