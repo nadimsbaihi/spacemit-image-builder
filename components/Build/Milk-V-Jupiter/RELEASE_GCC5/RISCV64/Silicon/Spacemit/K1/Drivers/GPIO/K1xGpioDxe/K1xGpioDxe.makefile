@@ -1,1 +1,0 @@
-/home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/GPIO/K1xGpioDxe/GNUmakefile

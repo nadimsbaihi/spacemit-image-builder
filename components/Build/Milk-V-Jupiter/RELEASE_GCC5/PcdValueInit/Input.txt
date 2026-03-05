@@ -1,7 +1,0 @@
-DEFAULT.STANDARD.gSpacemitTokenSpaceGuid.PcdBoardPciRootBridgeResourceConfigTable|PCI_ROOT_BRIDGE_RESOURCE_CONFIG_ARRAY|{0x0}
-DEFAULT.STANDARD.gSpacemitTokenSpaceGuid.PcdDwPcieControllerConfigTable|DW_PCIE_CONTROLLER_CONFIGS|{0x0}
-DEFAULT.STANDARD.gSpacemitTokenSpaceGuid.PcdEepromConfigs|EEPROM_CONFIG_ARRAY|{0x0}
-DEFAULT.STANDARD.gSpacemitTokenSpaceGuid.PcdI2cControllerConfigs|I2C_CONTROLLER_CONFIG_ARRAY|{0x0}
-DEFAULT.STANDARD.gSpacemitTokenSpaceGuid.PcdI2cSlaveConfig|I2C_SLAVE_CONFIG_ARRAY|{0x0}
-DEFAULT.STANDARD.gSpacemitTokenSpaceGuid.PcdLedConfigs|LED_CONFIG_ARRAY|{0x0}
-DEFAULT.STANDARD.gSpacemitK1TokenSpaceGuid.PcdMmcHostConfigs|MMC_HOST_CONTROLLER_CONFIG_ARRAY|{0x0}

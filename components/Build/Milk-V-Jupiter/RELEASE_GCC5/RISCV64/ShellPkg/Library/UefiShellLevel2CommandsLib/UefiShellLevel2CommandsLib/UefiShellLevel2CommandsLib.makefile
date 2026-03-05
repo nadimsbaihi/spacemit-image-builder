@@ -1,1 +1,0 @@
-/home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/ShellPkg/Library/UefiShellLevel2CommandsLib/UefiShellLevel2CommandsLib/GNUmakefile
