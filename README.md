@@ -20,7 +20,7 @@ complete firmware-to-userspace stack from open-source components.
 │                 NVMe SSD (GPT)                          │
 │  ┌──────────────────┬──────────────────────────────┐    │
 │  │    efi.img       │        rootfs.ext4           │    │
-│  │  (FAT32: GRUB   │  (Debian Trixie riscv64)     │    │
+│  │  (FAT32: GRUB   │  (Debian Trixie riscv64)      │    │
 │  │   )              │                              │    │
 │  │     256M         │       remaining              │    │
 │  └──────────────────┴──────────────────────────────┘    │
