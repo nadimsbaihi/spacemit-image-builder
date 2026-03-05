@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/FV/Ffs/02457302-4ad7-4bc7-847a-0ce86e5e0734SdHostDxe/02457302-4ad7-4bc7-847a-0ce86e5e0734SEC2.1.pe32 /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/SdHostDxe/SdHostDxe/OUTPUT/SdHostDxe.efi

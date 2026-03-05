@@ -1,0 +1,13 @@
+
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/MemInfoDxe/MemInfoDxe/DEBUG/MemInfoScreenVfr.c.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/MemInfoDxe/MemInfoDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/MemInfoDxe/MemInfoDxe/OUTPUT/MemInfoScreen.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/MemInfoDxe/MemInfoDxe/OUTPUT/MemInfoNvramLib.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/MemInfoDxe/MemInfoDxe/OUTPUT/MemInfoScreenVfr.obj.deps
+
+               

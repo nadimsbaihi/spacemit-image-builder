@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.data
+.align 3
+.section .text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global RiscVSbiEcall ; .section ".text.RiscVSbiEcall", "ax" ; .type RiscVSbiEcall, %function ; .p2align 2 ; RiscVSbiEcall:
+  mv t0, a0
+  mv t1, a1
+  ld a0, 0(a0)
+  ld a1, 0(a1)
+  ecall
+  sd a0, 0(t0)
+  sd a1, 0(t1)
+  ret

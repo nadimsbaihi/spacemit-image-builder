@@ -1,0 +1,11 @@
+
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/HdmiGraphicsOutputDxe/HdmiGraphicsOutputDxe/OUTPUT/Hdmi.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/HdmiGraphicsOutputDxe/HdmiGraphicsOutputDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/HdmiGraphicsOutputDxe/HdmiGraphicsOutputDxe/OUTPUT/HdmiGraphicsOutputDxe.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/K1/Drivers/HdmiGraphicsOutputDxe/HdmiGraphicsOutputDxe/OUTPUT/Dpu.obj.deps
+
+               

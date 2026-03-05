@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/FV/Ffs/a7d8f3f7-d8a7-47df-b3ec-9E5A693C380CFdtDxe/a7d8f3f7-d8a7-47df-b3ec-9E5A693C380CSEC2.1.pe32 /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/RISC-V/ProcessorPkg/Universal/FdtDxe/FdtDxe/OUTPUT/FdtDxe.efi

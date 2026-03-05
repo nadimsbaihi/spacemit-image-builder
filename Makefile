@@ -40,9 +40,6 @@ CROSS_COMPILE       ?= riscv64-linux-gnu-
 ARCH                := riscv
 
 # SpacemiT toolchain (required for EDK2)
-# Override: make edk2 SPACEMIT_TOOLCHAIN=/path/to/toolchain
-SPACEMIT_TOOLCHAIN  ?= /opt/spacemit-toolchain-linux-glibc-x86_64-v1.1.2
-EDK2_CROSS_PREFIX   ?= riscv64-unknown-linux-gnu-
 
 # Paths
 TOP                 := $(CURDIR)
@@ -189,7 +186,9 @@ opensbi: check-submodules $(STAMPS)
 		echo "[OPENSBI] Already built. Use 'make clean-opensbi' to rebuild."; \
 	else \
 		echo "[OPENSBI] Building OpenSBI..."; \
-		cd $(OPENSBI_DIR) && ./scripts/build.sh; \
+		cd $(OPENSBI_DIR) &&   DIRECT_BUILD=1 CROSS_COMPILE=riscv64-linux-gnu- \
+ 		 make PLATFORM_DEFCONFIG=k1_defconfig PLATFORM=generic \
+  		EXTRA_CFLAGS="-std=gnu11" -j$(nproc); \
 		echo "[OPENSBI] Searching for fw_dynamic.itb..."; \
 		FOUND=$$(find $(OPENSBI_DIR) -name "fw_dynamic.itb" -print -quit); \
 		if [ -n "$$FOUND" ]; then \
@@ -225,10 +224,9 @@ edk2: check-submodules $(STAMPS)
 		$(SCRIPTS)/build-edk2.sh \
 			"$(EDK2_DIR)" \
 			"$(EDK2_PLATFORMS_DIR)" \
-			"$(SPACEMIT_TOOLCHAIN)" \
-			"$(EDK2_CROSS_PREFIX)" \
-			"$(BUILD_BOOT)"; \
-		echo "[EDK2] Output: $(BUILD_BOOT)/Milk-V-Jupiter.itb"; \
+			"$(CROSS_COMPILE)" \
+			"$(BUILD_BOOT)" && \
+		echo "[EDK2] Output: $(BUILD_BOOT)/Milk-V-Jupiter.itb" && \
 		touch $(STAMPS)/edk2.done; \
 	fi
 
@@ -241,7 +239,7 @@ clean-edk2:
 # ESOS (Energy Service OS for K1 co-processor)
 # =============================================================================
 # Interactive build.sh — piped with chip=0 (n308) and board=0 (k1-x).
-# Output: rtthead-n308.elf
+# Output: rtthread-n308.elf
 # =============================================================================
 
 esos: check-submodules $(STAMPS)
@@ -252,25 +250,25 @@ esos: check-submodules $(STAMPS)
 		cd $(ESOS_DIR) && \
 			printf '0\n0\n' | ./build.sh config && \
 			./build.sh; \
-		echo "[ESOS] Searching for rtthead-n308.elf..."; \
-		FOUND=$$(find $(ESOS_DIR) -name "rtthead-n308.elf" -print -quit); \
+		echo "[ESOS] Searching for rtthread-n308.elf..."; \
+		FOUND=$$(find $(ESOS_DIR) -name "rtthread-n308.elf" -print -quit); \
 		if [ -n "$$FOUND" ]; then \
 			echo "[ESOS] Found: $$FOUND"; \
-			cp "$$FOUND" $(BUILD_OS)/rtthead-n308.elf; \
+			cp "$$FOUND" $(BUILD_OS)/rtthread-n308.elf; \
 		else \
-			echo "ERROR: rtthead-n308.elf not found in ESOS build tree." >&2; \
+			echo "ERROR: rtthread-n308.elf not found in ESOS build tree." >&2; \
 			echo "Contents of $(ESOS_DIR)/output/ (if exists):" >&2; \
 			ls -la $(ESOS_DIR)/output/ 2>/dev/null >&2 || true; \
 			exit 1; \
 		fi; \
-		echo "[ESOS] Output: $(BUILD_OS)/rtthead-n308.elf"; \
+		echo "[ESOS] Output: $(BUILD_OS)/rtthread-n308.elf"; \
 		touch $(STAMPS)/esos.done; \
 	fi
 
 clean-esos:
 	@echo "[ESOS] Cleaning..."
 	-cd $(ESOS_DIR) && rm -rf output build 2>/dev/null
-	@rm -f $(BUILD_OS)/rtthead-n308.elf $(STAMPS)/esos.done
+	@rm -f $(BUILD_OS)/rtthread-n308.elf $(STAMPS)/esos.done
 
 # =============================================================================
 # Kernel (Docker-based cross-compilation)
@@ -343,7 +341,7 @@ debian: kernel grub esos $(STAMPS)
 		mkdir -p $(DEBIAN_INPUT)/{debs,grub,esos}; \
 		cp $(BUILD_OS)/debs/*.deb          $(DEBIAN_INPUT)/debs/; \
 		cp $(BUILD_OS)/grub/*.efi          $(DEBIAN_INPUT)/grub/; \
-		cp $(BUILD_OS)/rtthead-n308.elf    $(DEBIAN_INPUT)/esos/; \
+		cp $(BUILD_OS)/rtthread-n308.elf    $(DEBIAN_INPUT)/esos/; \
 		echo "[DEBIAN] Building Debian image (Docker)..."; \
 		docker build -t $(DOCKER_DEBIAN) $(DEBIAN_BUILDER_DIR); \
 		mkdir -p $(BUILD_OS)/debian; \
@@ -426,7 +424,7 @@ help:
 	@echo "  make uboot          U-Boot SPL (FSBL.bin + bootinfo_spinor.bin)"
 	@echo "  make opensbi        OpenSBI (fw_dynamic.itb)"
 	@echo "  make edk2           EDK2 UEFI (Milk-V-Jupiter.itb → edk2.itb)"
-	@echo "  make esos           ESOS RT-Thread (rtthead-n308.elf)"
+	@echo "  make esos           ESOS RT-Thread (rtthread-n308.elf)"
 	@echo "  make kernel         Kernel .deb packages (Docker)"
 	@echo "  make grub           GRUB EFI binary (Docker)"
 	@echo "  make debian         Debian rootfs + EFI image (Docker)"

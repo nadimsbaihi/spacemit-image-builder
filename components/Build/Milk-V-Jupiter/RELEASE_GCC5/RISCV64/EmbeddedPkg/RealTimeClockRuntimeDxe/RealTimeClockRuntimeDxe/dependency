@@ -1,0 +1,7 @@
+
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe/OUTPUT/RealTimeClock.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe/OUTPUT/AutoGen.obj.deps
+
+               

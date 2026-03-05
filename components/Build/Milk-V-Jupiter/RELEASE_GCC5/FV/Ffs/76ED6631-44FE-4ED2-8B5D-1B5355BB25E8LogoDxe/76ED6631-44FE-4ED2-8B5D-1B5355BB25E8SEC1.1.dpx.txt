@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/FV/Ffs/76ED6631-44FE-4ED2-8B5D-1B5355BB25E8LogoDxe/76ED6631-44FE-4ED2-8B5D-1B5355BB25E8SEC1.1.dpx /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/Drivers/LogoDxe/LogoDxe/OUTPUT/LogoDxe.depex

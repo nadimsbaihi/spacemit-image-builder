@@ -1,0 +1,9 @@
+
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/HiiLib.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/HiiString.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/HiiLanguage.obj.deps
+
+               

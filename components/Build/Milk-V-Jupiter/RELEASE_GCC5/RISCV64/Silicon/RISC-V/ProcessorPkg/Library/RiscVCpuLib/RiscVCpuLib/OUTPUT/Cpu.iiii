@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+.data
+
+.text
+.align 3
+
+
+
+
+
+.global RiscVSetMachineScratch ; .section ".text.RiscVSetMachineScratch", "ax" ; .type RiscVSetMachineScratch, %function ; .p2align 2 ; RiscVSetMachineScratch:
+    csrrw a1, 0x340, a0
+    ret
+
+
+
+
+
+.global RiscVGetMachineScratch ; .section ".text.RiscVGetMachineScratch", "ax" ; .type RiscVGetMachineScratch, %function ; .p2align 2 ; RiscVGetMachineScratch:
+    csrrs a0, 0x340, 0
+    ret
+
+
+
+
+.global RiscVGetMachineTrapCause ; .section ".text.RiscVGetMachineTrapCause", "ax" ; .type RiscVGetMachineTrapCause, %function ; .p2align 2 ; RiscVGetMachineTrapCause:
+    csrrs a0, 0x342, 0
+    ret
+
+
+
+
+.global RiscVReadMachineInterruptEnable ; .section ".text.RiscVReadMachineInterruptEnable", "ax" ; .type RiscVReadMachineInterruptEnable, %function ; .p2align 2 ; RiscVReadMachineInterruptEnable:
+    csrr a0, 0x304
+    ret
+
+
+
+
+.global RiscVReadMachineInterruptPending ; .section ".text.RiscVReadMachineInterruptPending", "ax" ; .type RiscVReadMachineInterruptPending, %function ; .p2align 2 ; RiscVReadMachineInterruptPending:
+    csrr a0, 0x344
+    ret
+
+
+
+
+.global RiscVReadMachineStatus ; .section ".text.RiscVReadMachineStatus", "ax" ; .type RiscVReadMachineStatus, %function ; .p2align 2 ; RiscVReadMachineStatus:
+    csrr a0, 0x300
+    ret
+
+
+
+
+.global RiscVWriteMachineStatus ; .section ".text.RiscVWriteMachineStatus", "ax" ; .type RiscVWriteMachineStatus, %function ; .p2align 2 ; RiscVWriteMachineStatus:
+    csrw 0x300, a0
+    ret
+
+
+
+
+.global RiscVReadMachineTrapVector ; .section ".text.RiscVReadMachineTrapVector", "ax" ; .type RiscVReadMachineTrapVector, %function ; .p2align 2 ; RiscVReadMachineTrapVector:
+    csrr a0, 0x305
+    ret
+
+
+
+
+.global RiscVReadMachineIsa ; .section ".text.RiscVReadMachineIsa", "ax" ; .type RiscVReadMachineIsa, %function ; .p2align 2 ; RiscVReadMachineIsa:
+    csrr a0, 0x301
+    ret
+
+
+
+
+.global RiscVReadMachineVendorId ; .section ".text.RiscVReadMachineVendorId", "ax" ; .type RiscVReadMachineVendorId, %function ; .p2align 2 ; RiscVReadMachineVendorId:
+    csrr a0, 0xF11
+    ret
+
+
+
+
+.global RiscVReadMachineArchitectureId ; .section ".text.RiscVReadMachineArchitectureId", "ax" ; .type RiscVReadMachineArchitectureId, %function ; .p2align 2 ; RiscVReadMachineArchitectureId:
+    csrr a0, 0xF12
+    ret
+
+
+
+
+.global RiscVReadMachineImplementId ; .section ".text.RiscVReadMachineImplementId", "ax" ; .type RiscVReadMachineImplementId, %function ; .p2align 2 ; RiscVReadMachineImplementId:
+    csrr a0, 0xF13
+    ret

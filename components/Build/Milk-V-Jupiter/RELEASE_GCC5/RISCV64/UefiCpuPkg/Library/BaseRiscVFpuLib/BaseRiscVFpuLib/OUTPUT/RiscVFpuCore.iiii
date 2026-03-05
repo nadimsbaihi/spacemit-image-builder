@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global RiscVInitializeFpu ; .section ".text.RiscVInitializeFpu", "ax" ; .type RiscVInitializeFpu, %function ; .p2align 2 ; RiscVInitializeFpu:
+  csrr a0, 0x100
+  li a1, 0x00006000UL
+  or a0, a0, a1
+  csrw 0x100, a0
+  csrw 0x003, x0
+  li a0, 0
+  ret

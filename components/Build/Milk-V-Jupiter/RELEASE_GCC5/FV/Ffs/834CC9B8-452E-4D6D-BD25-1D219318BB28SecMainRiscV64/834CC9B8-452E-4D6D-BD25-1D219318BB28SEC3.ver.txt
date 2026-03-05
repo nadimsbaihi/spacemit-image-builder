@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/FV/Ffs/834CC9B8-452E-4D6D-BD25-1D219318BB28SecMainRiscV64/834CC9B8-452E-4D6D-BD25-1D219318BB28SEC3.ver

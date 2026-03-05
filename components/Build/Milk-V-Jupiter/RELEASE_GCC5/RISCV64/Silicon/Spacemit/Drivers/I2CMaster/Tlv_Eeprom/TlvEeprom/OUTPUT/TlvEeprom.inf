@@ -1,0 +1,180 @@
+## @file
+#  TLV EEPROM driver for Spacemit platforms
+#
+#  Copyright (c) 2024 Spacemit Ltd. All rights reserved.
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x0001001b
+  BASE_NAME                  = TlvEeprom
+  FILE_GUID                  = 2ac23250-ee47-4a6b-a0f6-ca0dd512fc6b
+  MODULE_TYPE                = DXE_DRIVER
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = TlvEepromDriverEntryPoint
+  UNLOAD_IMAGE               = TlvEepromDriverUnload
+
+[Packages.RISCV64]
+  MdePkg/MdePkg.dec
+  Silicon/Spacemit/SpacemitPkg.dec
+
+[Binaries.RISCV64]
+  PE32|TlvEeprom.efi
+  DXE_DEPEX|TlvEeprom.depex
+
+[PatchPcd.RISCV64]
+
+[Protocols.RISCV64]
+  ## PRODUCES
+  gSpacemitTlvInfoProtocolGuid
+
+  ## CONSUMES
+  gSpacemitEepromProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdProtocolGuid
+
+  ## CONSUMES
+  gEfiPcdProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## CONSUMES
+  gEfiDevicePathUtilitiesProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathToTextProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathFromTextProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleFileSystemProtocolGuid
+
+  ## SOMETIMES_CONSUMES # Consumes if gEfiGraphicsOutputProtocolGuid uninstalled
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnostics2ProtocolGuid
+
+
+[Ppis.RISCV64]
+
+[Guids.RISCV64]
+  ## CONSUMES
+  gSpacemitProductVariableGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventAfterReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Variable
+  gEfiGlobalVariableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  gEfiAcpi20TableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  gEfiAcpi10TableGuid
+
+
+[PcdEx.RISCV64]
+
+[LibraryClasses.RISCV64]
+## @LIB_INSTANCES
+#  MdePkg/Library/DxePcdLib/DxePcdLib.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/BaseRiscVSbiLib/BaseRiscVSbiLib.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdePkg/Library/BaseSerialPortLibRiscVSbiLib/BaseSerialPortLibRiscVSbiLibRam.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/StackCheckLibNull/StackCheckLibNull.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+#  MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+
+[Depex.RISCV64]
+#  (gSpacemitEepromProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiBdsArchProtocolGuid AND gEfiCpuArchProtocolGuid AND gEfiMetronomeArchProtocolGuid AND gEfiMonotonicCounterArchProtocolGuid AND gEfiRealTimeClockArchProtocolGuid AND gEfiResetArchProtocolGuid AND gEfiRuntimeArchProtocolGuid AND gEfiSecurityArchProtocolGuid AND gEfiTimerArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiWatchdogTimerArchProtocolGuid)
+
+
+
+
+
+[BuildOptions.RISCV64]
+## @AsBuilt
+##   GCC:RELEASE_GCC5_RISCV64_ASMLINK_FLAGS = /nologo /tiny
+##   GCC:RELEASE_GCC5_RISCV64_DLINK2_FLAGS = -Wl,--defsym=PECOFF_HEADER_SIZE=0x220,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds
+##   GCC:RELEASE_GCC5_RISCV64_DTC_FLAGS = -H epapr
+##   GCC:RELEASE_GCC5_RISCV64_DTCPP_FLAGS = -E -x assembler-with-cpp -imacros AutoGen.h -nostdinc -undef
+##   GCC:RELEASE_GCC5_RISCV64_DLINK_FLAGS = -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,$(IMAGE_ENTRY_POINT) -u $(IMAGE_ENTRY_POINT) -Wl,-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map -Wl,-melf64lriscv,--oformat=elf64-littleriscv,--no-relax -z common-page-size=0x1000
+##   GCC:RELEASE_GCC5_RISCV64_VFRPP_FLAGS = -x c -E -P -DVFRCOMPILE --include $(MODULE_NAME)StrDefs.h
+##   GCC:RELEASE_GCC5_RISCV64_OPTROM_FLAGS = -e
+##   GCC:RELEASE_GCC5_RISCV64_APP_FLAGS = 
+##   GCC:RELEASE_GCC5_RISCV64_ASL_FLAGS = 
+##   GCC:RELEASE_GCC5_RISCV64_PP_FLAGS = -E -x assembler-with-cpp -include AutoGen.h -DOPENSBI_EXTERNAL_SBI_TYPES=OpensbiTypes.h
+##   GCC:RELEASE_GCC5_RISCV64_OBJCOPY_FLAGS = 
+##   GCC:RELEASE_GCC5_RISCV64_ASLCC_FLAGS = -x c
+##   GCC:RELEASE_GCC5_RISCV64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:RELEASE_GCC5_RISCV64_NASMB_FLAGS = -f bin
+##   GCC:RELEASE_GCC5_RISCV64_ASLPP_FLAGS = -x c -E -include AutoGen.h
+##   GCC:RELEASE_GCC5_RISCV64_ASLDLINK_FLAGS = -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,ReferenceAcpiTable -u ReferenceAcpiTable
+##   GCC:RELEASE_GCC5_RISCV64_GENFW_FLAGS = 
+##   GCC:RELEASE_GCC5_RISCV64_DEPS_FLAGS = -MMD -MF $@.deps
+##   GCC:RELEASE_GCC5_RISCV64_VFR_FLAGS = -l -n
+##   GCC:RELEASE_GCC5_RISCV64_RC_FLAGS = -I binary -O elf64-littleriscv   -B riscv       --rename-section .data=.hii
+##   GCC:RELEASE_GCC5_RISCV64_ASM_FLAGS = -c -x assembler -imacros $(DEST_DIR_DEBUG)/AutoGen.h -march=rv64gc -mcmodel=medany -mabi=lp64
+##   GCC:RELEASE_GCC5_RISCV64_CC_FLAGS = -g -fshort-wchar -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -ffunction-sections -fdata-sections -include AutoGen.h -fno-common -DSTRING_ARRAY_NAME=$(BASE_NAME)Strings -msmall-data-limit=0 -Wno-tautological-compare -Wno-pointer-compare -DOPENSBI_EXTERNAL_SBI_TYPES=OpensbiTypes.h -march=rv64gc -fno-builtin -fno-builtin-memcpy -fno-stack-protector -Wno-address -fno-asynchronous-unwind-tables -fno-unwind-tables -Wno-unused-but-set-variable -fpack-struct=8 -mcmodel=medany -mabi=lp64 -mno-relax -save-temps -DMDEPKG_NDEBUG

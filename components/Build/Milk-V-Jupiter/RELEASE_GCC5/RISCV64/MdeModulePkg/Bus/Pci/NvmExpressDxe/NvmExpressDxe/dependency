@@ -1,0 +1,19 @@
+
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressDiskInfo.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressBlockIo.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressHci.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpress.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/ComponentName.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressPassthru.obj.deps
+
+-include /home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressMediaSanitize.obj.deps
+
+               

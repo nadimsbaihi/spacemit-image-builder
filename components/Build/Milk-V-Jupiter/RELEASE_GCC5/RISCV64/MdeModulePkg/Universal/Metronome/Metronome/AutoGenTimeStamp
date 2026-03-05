@@ -1,0 +1,16 @@
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/BaseSerialPortLibRiscVSbiLib/BaseSerialPortLibRiscVSbiLibRam.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdeModulePkg/Universal/Metronome/Metronome.h
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/BaseRiscVSbiLib/BaseRiscVSbiLib.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdeModulePkg/Universal/Metronome/Metronome.c
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdeModulePkg/Universal/Metronome/Metronome.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/StackCheckLibNull/StackCheckLibNull.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+/home/kapoagaeming/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/Metronome/Metronome/DEBUG/AutoGen.h
+/home/kapoagaeming/spacemit-image-builder/components/edk2/UefiCpuPkg/Library/BaseRiscV64CpuTimerLib/BaseRiscV64CpuTimerLib.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/DxePcdLib/DxePcdLib.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/BaseLib/BaseLib.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+/home/kapoagaeming/spacemit-image-builder/components/edk2/MdePkg/Library/BasePrintLib/BasePrintLib.inf
