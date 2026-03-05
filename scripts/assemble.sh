@@ -10,7 +10,6 @@
 #   │   └── FSBL.bin              (U-Boot SPL)
 #   ├── fw_dynamic.itb            (OpenSBI)
 #   ├── edk2.itb                  (EDK2 UEFI FIT image, renamed from Milk-V-Jupiter.itb)
-#   ├── env.bin                   (U-Boot environment — empty/zeroed)
 #   ├── partition_2M.json         (SPI NOR MTD partition table)
 #   ├── partition_universal.json  (eMMC/SD GPT partition table)
 #   ├── efi.img                   (FAT32 EFI partition from Debian builder)
