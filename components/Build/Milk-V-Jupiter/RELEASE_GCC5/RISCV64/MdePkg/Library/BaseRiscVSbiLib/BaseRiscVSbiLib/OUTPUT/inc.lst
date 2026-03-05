@@ -1,0 +1,8 @@
+-I/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BaseRiscVSbiLib
+-I/home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/BaseRiscVSbiLib/BaseRiscVSbiLib/DEBUG
+-I/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg
+-I/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include
+-I/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Test/UnitTest/Include
+-I/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Test/Mock/Include
+-I/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/MipiSysTLib/mipisyst/library/include
+-I/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/RiscV64

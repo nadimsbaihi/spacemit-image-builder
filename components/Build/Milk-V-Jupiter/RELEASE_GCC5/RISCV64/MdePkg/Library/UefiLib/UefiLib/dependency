@@ -1,0 +1,15 @@
+
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/Acpi.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLibPrint.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/Console.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiNotTiano.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiDriverModel.obj.deps
+
+               

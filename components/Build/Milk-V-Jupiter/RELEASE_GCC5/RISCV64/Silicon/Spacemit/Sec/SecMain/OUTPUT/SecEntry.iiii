@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.global _ModuleEntryPoint ; .section ".text._ModuleEntryPoint", "ax" ; .type _ModuleEntryPoint, %function ; .p2align 2 ; _ModuleEntryPoint:
+
+  li a4, 0x23FF0000
+  li a5, 0x10000
+
+
+  add sp, a4, a5
+
+  call SecStartup

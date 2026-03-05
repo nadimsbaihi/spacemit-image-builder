@@ -1,0 +1,7 @@
+
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/BaseSafeIntLib/BaseSafeIntLib/OUTPUT/SafeIntLib.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdePkg/Library/BaseSafeIntLib/BaseSafeIntLib/OUTPUT/SafeIntLib64.obj.deps
+
+               

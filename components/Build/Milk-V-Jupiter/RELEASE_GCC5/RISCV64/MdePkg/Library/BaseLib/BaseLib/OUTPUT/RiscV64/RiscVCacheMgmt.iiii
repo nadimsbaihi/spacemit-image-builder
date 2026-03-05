@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+.include "RiscVasm.inc"
+
+.align 3
+.globl RiscVInvalidateInstCacheFenceAsm
+.globl RiscVInvalidateDataCacheFenceAsm
+
+RiscVInvalidateInstCacheFenceAsm:
+    fence.i
+    ret
+
+RiscVInvalidateDataCacheFenceAsm:
+    fence
+    ret
+
+.globl RiscVCpuCacheFlushCmoAsm
+RiscVCpuCacheFlushCmoAsm:
+    RISCVCMOFLUSH
+    ret
+
+.globl RiscVCpuCacheCleanCmoAsm
+RiscVCpuCacheCleanCmoAsm:
+    RISCVCMOCLEAN
+    ret
+
+.globl RiscVCpuCacheInvalCmoAsm
+RiscVCpuCacheInvalCmoAsm:
+    RISCVCMOINVALIDATE
+    ret

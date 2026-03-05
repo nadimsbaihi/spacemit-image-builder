@@ -1,0 +1,11 @@
+
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/BootManagerVfr.c.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/AutoGen.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/BootManagerVfr.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/BootManager.obj.deps
+
+               

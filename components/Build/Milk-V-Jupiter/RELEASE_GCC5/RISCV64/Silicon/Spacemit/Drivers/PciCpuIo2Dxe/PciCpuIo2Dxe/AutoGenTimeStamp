@@ -1,0 +1,16 @@
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BaseLib/BaseLib.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BasePrintLib/BasePrintLib.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BaseSerialPortLibRiscVSbiLib/BaseSerialPortLibRiscVSbiLibRam.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2-platforms/Silicon/Spacemit/Drivers/PciCpuIo2Dxe/PciCpuIo2Dxe.c
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/Silicon/Spacemit/Drivers/PciCpuIo2Dxe/PciCpuIo2Dxe/DEBUG/AutoGen.h
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/DxePcdLib/DxePcdLib.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2-platforms/Silicon/Spacemit/Drivers/PciCpuIo2Dxe/PciCpuIo2Dxe.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/StackCheckLibNull/StackCheckLibNull.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Library/BaseRiscVSbiLib/BaseRiscVSbiLib.inf

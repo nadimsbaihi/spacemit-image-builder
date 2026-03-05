@@ -1,0 +1,9 @@
+
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe/OUTPUT/ComponentName.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe/OUTPUT/DiskIo.obj.deps
+
+               

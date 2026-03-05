@@ -1,0 +1,13 @@
+
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/Expression.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/Presentation.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/IfrParse.obj.deps
+
+-include /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/Setup.obj.deps
+
+               

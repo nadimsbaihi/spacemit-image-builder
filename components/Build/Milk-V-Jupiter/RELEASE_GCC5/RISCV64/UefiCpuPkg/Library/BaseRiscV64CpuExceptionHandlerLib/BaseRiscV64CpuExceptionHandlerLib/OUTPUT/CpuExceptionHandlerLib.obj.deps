@@ -1,0 +1,34 @@
+/home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/UefiCpuPkg/Library/BaseRiscV64CpuExceptionHandlerLib/BaseRiscV64CpuExceptionHandlerLib/OUTPUT/CpuExceptionHandlerLib.obj:  /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/UefiCpuPkg/Library/BaseRiscV64CpuExceptionHandlerLib/CpuExceptionHandlerLib.c \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/Build/Milk-V-Jupiter/RELEASE_GCC5/RISCV64/UefiCpuPkg/Library/BaseRiscV64CpuExceptionHandlerLib/BaseRiscV64CpuExceptionHandlerLib/DEBUG/AutoGen.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Base.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/RiscV64/ProcessorBind.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/PiPei.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Uefi/UefiBaseType.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiPeiCis.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Guid/WinCertificate.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiMultiPhase.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiFirmwareFile.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiBootMode.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiHob.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiDependency.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiStatusCode.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Protocol/DebugSupport.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/IndustryStandard/PeImage.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Pi/PiS3BootScript.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Ppi/CpuIo.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Ppi/PciCfg2.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Library/BaseLib.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Ppi/VectorHandoffInfo.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Protocol/Cpu.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Library/DebugLib.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Library/SerialPortLib.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Protocol/SerialIo.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Library/PrintLib.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Register/RiscV64/RiscVEncoding.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/UefiCpuPkg/Library/BaseRiscV64CpuExceptionHandlerLib/CpuExceptionHandlerLib.h \
+ /home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2/MdePkg/Include/Register/RiscV64/RiscVImpl.h
+
+# Updated 

@@ -1,0 +1,67 @@
+{
+  "gSpacemitK1TokenSpaceGuid_PcdMmcHostConfigs": {
+    "DefaultValueFromDec": "{0x0}",
+    "DefaultValues": {},
+    "PcdFieldValueFromComm": {},
+    "PcdFieldValueFromFdf": {},
+    "DefaultFromDSC": null,
+    "PcdFiledValueFromDscComponent": {}
+  },
+  "gSpacemitTokenSpaceGuid_PcdI2cControllerConfigs": {
+    "DefaultValueFromDec": "{0x0}",
+    "DefaultValues": {},
+    "PcdFieldValueFromComm": {},
+    "PcdFieldValueFromFdf": {},
+    "DefaultFromDSC": null,
+    "PcdFiledValueFromDscComponent": {}
+  },
+  "gSpacemitTokenSpaceGuid_PcdI2cSlaveConfig": {
+    "DefaultValueFromDec": "{0x0}",
+    "DefaultValues": {},
+    "PcdFieldValueFromComm": {},
+    "PcdFieldValueFromFdf": {},
+    "DefaultFromDSC": null,
+    "PcdFiledValueFromDscComponent": {}
+  },
+  "gSpacemitTokenSpaceGuid_PcdEepromConfigs": {
+    "DefaultValueFromDec": "{0x0}",
+    "DefaultValues": {},
+    "PcdFieldValueFromComm": {},
+    "PcdFieldValueFromFdf": {},
+    "DefaultFromDSC": null,
+    "PcdFiledValueFromDscComponent": {}
+  },
+  "gSpacemitTokenSpaceGuid_PcdLedConfigs": {
+    "DefaultValueFromDec": "{0x0}",
+    "DefaultValues": {},
+    "PcdFieldValueFromComm": {},
+    "PcdFieldValueFromFdf": {},
+    "DefaultFromDSC": null,
+    "PcdFiledValueFromDscComponent": {}
+  },
+  "gSpacemitTokenSpaceGuid_PcdDwPcieControllerConfigTable": {
+    "DefaultValueFromDec": "{0x0}",
+    "DefaultValues": {},
+    "PcdFieldValueFromComm": {},
+    "PcdFieldValueFromFdf": {},
+    "DefaultFromDSC": null,
+    "PcdFiledValueFromDscComponent": {}
+  },
+  "gSpacemitTokenSpaceGuid_PcdBoardPciRootBridgeResourceConfigTable": {
+    "DefaultValueFromDec": "{0x0}",
+    "DefaultValues": {},
+    "PcdFieldValueFromComm": {},
+    "PcdFieldValueFromFdf": {},
+    "DefaultFromDSC": null,
+    "PcdFiledValueFromDscComponent": {}
+  },
+  "CC_FLAGS": "CFLAGS += -Wno-pointer-to-int-cast -Wno-unused-variable -DMDEPKG_NDEBUG",
+  "OBJECTS": {
+    "/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2-platforms/Silicon/Spacemit/Include/Library/DesignWarePcieControllerConfig.h": 1772743124.109773,
+    "/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2-platforms/Silicon/Spacemit/K1/Drivers/LedControl/LedPcdConfig.h": 1772743124.1110976,
+    "/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2-platforms/Silicon/Spacemit/Include/Library/PciRootBrdigeResourceConfig.h": 1772743124.109884,
+    "/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2-platforms/Silicon/Spacemit/K1/Drivers/SdHostDxe/MmcHostPcdConfig.h": 1772743124.1139195,
+    "/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2-platforms/Silicon/Spacemit/Drivers/I2CMaster/I2CMaster/I2cPcdConfig.h": 1772743124.1071432,
+    "/home/kapoagaeming/Downloads/spacemit-image-builder/components/edk2-platforms/Silicon/Spacemit/Drivers/I2CMaster/Eeprom/EepromPcdConfig.h": 1772743124.1069753
+  }
+}
