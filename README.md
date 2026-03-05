@@ -91,7 +91,7 @@ output/
 ├── fw_dynamic.itb             (OpenSBI)
 ├── edk2.itb                   (EDK2 UEFI FIT image)
 ├── partition_2M.json          (SPI NOR MTD partition table)
-├── partition_universal.json   (eMMC/SD GPT partition table)
+├── partition_universal.json   (NVMe SSD GPT partition table)
 ├── efi.img                    (FAT32 EFI partition)
 └── rootfs.ext4                (Debian Trixie rootfs)
 ```

@@ -11,7 +11,7 @@
 #   ├── fw_dynamic.itb            (OpenSBI)
 #   ├── edk2.itb                  (EDK2 UEFI FIT image, renamed from Milk-V-Jupiter.itb)
 #   ├── partition_2M.json         (SPI NOR MTD partition table)
-#   ├── partition_universal.json  (eMMC/SD GPT partition table)
+#   ├── partition_universal.json  (NVMe SSD GPT partition table)
 #   ├── efi.img                   (FAT32 EFI partition from Debian builder)
 #   └── rootfs.ext4               (Debian Trixie root filesystem)
 # =============================================================================
@@ -94,7 +94,7 @@ fi
 
 # ---- OS: efi.img (FAT32 EFI partition from Debian builder) ----
 echo ""
-echo "OS artifacts (eMMC/SD):"
+echo "OS artifacts (NVMe SSD):"
 
 if [ -f "$BUILD_OS/debian/efi.img" ]; then
     cp "$BUILD_OS/debian/efi.img" "$OUTPUT/efi.img"

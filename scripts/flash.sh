@@ -10,7 +10,7 @@
 # Flash sequence:
 #   Phase 1: Bootstrap — stage FSBL and EDK2 into RAM to enter fastboot mode
 #   Phase 2: Flash SPI NOR — MTD partition table + individual partitions
-#   Phase 3: Flash eMMC/SD — GPT layout + EFI + rootfs
+#   Phase 3: Flash NVMe SSD — GPT layout + EFI + rootfs
 # =============================================================================
 set -euo pipefail
 
@@ -91,9 +91,9 @@ fastboot flash opensbi fw_dynamic.itb
 echo "[FLASH] Flashing EDK2 UEFI..."
 fastboot flash edk2 edk2.itb
 
-# ---- Phase 3: Flash eMMC/SD (GPT) ----
+# ---- Phase 3: Flash NVMe SSD (GPT) ----
 echo ""
-echo "[PHASE 3] Flashing eMMC/SD partitions..."
+echo "[PHASE 3] Flashing NVMe SSD partitions..."
 
 echo "[FLASH] Writing GPT partition table..."
 fastboot flash gpt partition_universal.json
