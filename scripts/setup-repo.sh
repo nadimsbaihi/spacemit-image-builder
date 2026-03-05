@@ -80,7 +80,7 @@ add_submodule "components/grub-builder" \
     "https://github.com/nadimsbaihi/grub-builder.git"
 
 add_submodule "components/debian-builder" \
-    "https://github.com/nadimsbaihi/debian-kernel-spacemit-builder.git"
+    "https://github.com/nadimsbaihi/debian-spacemit-builder.git"
 
 add_submodule "components/esos" \
     "https://github.com/nadimsbaihi/esos.git"
