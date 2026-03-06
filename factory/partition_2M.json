@@ -16,14 +16,20 @@
       "image": "factory/FSBL.bin"
     },
     {
-      "name": "opensbi",
+      "name": "env",
       "offset": "384K",
+      "size": "64K",
+      "image": "env.bin"
+    },
+    {
+      "name": "opensbi",
+      "offset": "448K",
       "size": "192K",
       "image": "fw_dynamic.itb"
     },
     {
       "name": "uboot",
-      "offset": "576K",
+      "offset": "640K",
       "size": "-",
       "image": "edk2.itb"
     }
