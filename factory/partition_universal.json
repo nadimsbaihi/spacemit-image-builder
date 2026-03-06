@@ -3,9 +3,9 @@
     "format": "gpt",
     "partitions": [
         {
-            "name": "EFI",
+            "name": "efi",
             "offset": "0K",
-            "size": "256M",
+            "size": "537M",
             "image": "efi.img"
         },
         {
