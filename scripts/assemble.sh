@@ -74,7 +74,12 @@ if [ -f "$BUILD_BOOT/FSBL.bin" ]; then
 else
     fail "FSBL.bin not found — run 'make uboot'"
 fi
-
+if [ -f "$BUILD_BOOT/u-boot.itb" ]; then
+    cp "$BUILD_BOOT/u-boot.itb" "$OUTPUT/u-boot.itb"
+    pass "u-boot.itb (U-Boot proper) — $(du -h "$BUILD_BOOT/u-boot.itb" | cut -f1)"
+else
+    fail "u-boot.itb not found — run 'make uboot'"
+fi
 # ---- Boot-stage: fw_dynamic.itb (OpenSBI) ----
 if [ -f "$BUILD_BOOT/fw_dynamic.itb" ]; then
     cp "$BUILD_BOOT/fw_dynamic.itb" "$OUTPUT/fw_dynamic.itb"
