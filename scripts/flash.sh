@@ -8,7 +8,7 @@
 #   - 'make assemble' completed successfully
 #
 # Flash sequence:
-#   Phase 1: Bootstrap — stage FSBL and EDK2 into RAM to enter fastboot mode
+#   Phase 1: Bootstrap — stage FSBL and U-Boot into RAM to enter fastboot mode
 #   Phase 2: Flash SPI NOR — MTD partition table + individual partitions
 #   Phase 3: Flash NVMe SSD — GPT layout + EFI + rootfs
 # =============================================================================
@@ -21,8 +21,10 @@ OUTPUT="$TOP/output"
 REQUIRED_FILES=(
     "factory/bootinfo_spinor.bin"
     "factory/FSBL.bin"
+    "u-boot.itb"
     "fw_dynamic.itb"
     "edk2.itb"
+    "env.bin"
     "partition_2M.json"
     "partition_universal.json"
     "efi.img"
@@ -67,8 +69,8 @@ fastboot stage factory/FSBL.bin
 fastboot continue
 sleep 2
 
-echo "[FLASH] Staging EDK2 UEFI..."
-fastboot stage edk2.itb
+echo "[FLASH] Staging U-Boot..."
+fastboot stage u-boot.itb
 fastboot continue
 sleep 3
 
@@ -88,8 +90,11 @@ fastboot flash fsbl factory/FSBL.bin
 echo "[FLASH] Flashing OpenSBI..."
 fastboot flash opensbi fw_dynamic.itb
 
-echo "[FLASH] Flashing EDK2 UEFI..."
-fastboot flash edk2 edk2.itb
+echo "[FLASH] Flashing U-Boot environment..."
+fastboot flash env env.bin
+
+echo "[FLASH] Flashing EDK2 UEFI (uboot partition)..."
+fastboot flash uboot edk2.itb
 
 # ---- Phase 3: Flash NVMe SSD (GPT) ----
 echo ""
