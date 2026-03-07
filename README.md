@@ -74,7 +74,7 @@ commit. See `scripts/setup-repo.sh` for details.
 | U-Boot SPL | gitee/spacemit-buildroot | Native cross-compile | `FSBL.bin` + `bootinfo_spinor.bin` |
 | OpenSBI | gitee/spacemit-buildroot | Native (`build.sh`) | `fw_dynamic.itb` |
 | EDK2 UEFI | nadimsbaihi/edk2-platforms | Native (edksetup.sh) | `Milk-V-Jupiter.itb` → `edk2.itb` |
-| ESOS | nadimsbaihi/esos | Native (`build.sh`) | `rtthead-n308.elf` |
+| ESOS | nadimsbaihi/esos | Native (`build.sh`) | `rtthread-n308.elf` |
 | Kernel | nadimsbaihi/debian-kernel-spacemit-builder | Docker | `linux-image-*.deb` |
 | GRUB | nadimsbaihi/grub-builder | Docker | `BOOTRISCV64.EFI` |
 | Debian rootfs | nadimsbaihi/debian-kernel-spacemit-builder | Docker (privileged) | `efi.img` + `rootfs.ext4` |
