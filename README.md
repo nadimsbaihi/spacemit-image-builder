@@ -22,7 +22,7 @@ complete firmware-to-userspace stack from open-source components.
 │  │    efi.img       │        rootfs.ext4           │    │
 │  │  (FAT32: GRUB)   │  (Debian Trixie riscv64)     │    │
 │  │                  │                              │    │
-│  │     256M         │       remaining              │    │
+│  │     537M         │       remaining              │    │
 │  └──────────────────┴──────────────────────────────┘    │
 └─────────────────────────────────────────────────────────┘
 ```
