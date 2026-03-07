@@ -2,9 +2,6 @@
 build/
 output/
 
-# Debian builder staged inputs
-components/
-
 # Editor / IDE
 *.swp
 *.swo
