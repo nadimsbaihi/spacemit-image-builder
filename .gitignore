@@ -3,7 +3,7 @@ build/
 output/
 
 # Debian builder staged inputs
-components/debian-builder/input/
+components/
 
 # Editor / IDE
 *.swp

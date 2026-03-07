@@ -135,23 +135,25 @@ $(STAMPS):
 	@mkdir -p $(STAMPS) $(BUILD_BOOT) $(BUILD_OS)
 
 # =============================================================================
-# U-Boot SPL
+# U-Boot 
 # =============================================================================
 # Produces:
 #   - spl/u-boot-spl.bin → FSBL.bin
 #   - bootinfo_spinor.bin (located at build root after compilation)
+#   - u-boot.itb
+#   - env.bin (from u-boot-env-default.bin)
 # =============================================================================
 
 uboot: check-submodules $(STAMPS)
 	@if [ -f $(STAMPS)/uboot.done ]; then \
 		echo "[UBOOT] Already built. Use 'make clean-uboot' to rebuild."; \
 	else \
-		echo "[UBOOT] Building U-Boot SPL..."; \
+		echo "[UBOOT] Building U-Boot..."; \
 		cd $(UBOOT_DIR) && \
 			export ARCH=$(ARCH) && \
 			export CROSS_COMPILE=$(CROSS_COMPILE) && \
 			make k1_defconfig && \
-			make -j$(NPROC) spl/u-boot-spl.bin; \
+			make -j$(NPROC); \
 		echo "[UBOOT] Copying FSBL.bin..."; \
 		cp $(UBOOT_DIR)/spl/u-boot-spl.bin $(BUILD_BOOT)/FSBL.bin; \
 		echo "[UBOOT] Copying bootinfo_spinor.bin..."; \
@@ -168,7 +170,27 @@ uboot: check-submodules $(STAMPS)
 				echo "ERROR: bootinfo_spinor.bin not found anywhere in U-Boot tree."; \
 			fi; \
 		fi; \
-		echo "[UBOOT] Output: $(BUILD_BOOT)/FSBL.bin"; \
+		echo "[UBOOT] Copying u-boot.itb..."; \
+		if [ -f "$(UBOOT_DIR)/u-boot.itb" ]; then \
+			cp $(UBOOT_DIR)/u-boot.itb $(BUILD_BOOT)/u-boot.itb; \
+		else \
+			echo "ERROR: u-boot.itb not found. Full U-Boot build may have failed."; \
+			exit 1; \
+		fi; \
+		echo "[UBOOT] Copying u-boot-env-default.bin → env.bin..."; \
+		if [ -f "$(UBOOT_DIR)/u-boot-env-default.bin" ]; then \
+			cp $(UBOOT_DIR)/u-boot-env-default.bin $(BUILD_BOOT)/env.bin; \
+		else \
+			echo "WARNING: u-boot-env-default.bin not found at $(UBOOT_DIR)/u-boot-env-default.bin"; \
+			FOUND=$$(find $(UBOOT_DIR) -name "u-boot-env-default.bin" -print -quit); \
+			if [ -n "$$FOUND" ]; then \
+				echo "Found at: $$FOUND"; \
+				cp "$$FOUND" $(BUILD_BOOT)/env.bin; \
+			else \
+				echo "ERROR: u-boot-env-default.bin not found anywhere in U-Boot tree."; \
+			fi; \
+		fi; \
+		echo "[UBOOT] Output: $(BUILD_BOOT)/{FSBL.bin,bootinfo_spinor.bin,u-boot.itb,env.bin}"; \
 		touch $(STAMPS)/uboot.done; \
 	fi
 

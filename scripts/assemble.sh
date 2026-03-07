@@ -80,6 +80,12 @@ if [ -f "$BUILD_BOOT/u-boot.itb" ]; then
 else
     fail "u-boot.itb not found — run 'make uboot'"
 fi
+if [ -f "$BUILD_BOOT/env.bin" ]; then
+    cp "$BUILD_BOOT/env.bin" "$OUTPUT/env.bin"
+    pass "env.bin (U-Boot environment) — $(du -h "$BUILD_BOOT/env.bin" | cut -f1)"
+else
+    fail "env.bin not found — run 'make uboot'"
+fi
 # ---- Boot-stage: fw_dynamic.itb (OpenSBI) ----
 if [ -f "$BUILD_BOOT/fw_dynamic.itb" ]; then
     cp "$BUILD_BOOT/fw_dynamic.itb" "$OUTPUT/fw_dynamic.itb"
