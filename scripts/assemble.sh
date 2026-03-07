@@ -116,7 +116,7 @@ fi
 
 # ---- OS: rootfs.ext4 ----
 if [ -f "$BUILD_OS/debian/rootfs.ext4" ]; then
-    cp "$BUILD_OS/debian/rootfs.ext4" "$OUTPUT/rootfs.ext4"
+    ln -s "$BUILD_OS/debian/rootfs.ext4" "$OUTPUT/rootfs.ext4"
     pass "rootfs.ext4 — $(du -h "$BUILD_OS/debian/rootfs.ext4" | cut -f1)"
 else
     fail "rootfs.ext4 not found — run 'make debian'"
